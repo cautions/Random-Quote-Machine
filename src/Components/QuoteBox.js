@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Quotes from "../Quotes/Quotes";
-import "./QuoteBox.css";
-import Button from "../Button/Button";
+import Quotes from "./Quotes";
+import Button from "./Button";
 
 class QuoteBox extends Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class QuoteBox extends Component {
 
   componentDidMount() {
     this.onRandomQuote();
-    this.changeColor();
+    //this.changeColor();
   }
 
   onRandomQuote = () => {
@@ -66,7 +65,7 @@ class QuoteBox extends Component {
   render() {
     const { newQuote, newName, color } = this.state;
     return (
-      <div id="quote-box" style={{ color: this.state.color }}>
+      <div id="quote-box" style={{ color }}>
         <Quotes quote={newQuote} name={newName} />
         <Button color={color} onRandomQuote={this.onRandomQuote} />
       </div>

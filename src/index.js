@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import QuoteBox from "./Components/QuoteBox/QuoteBox";
+import QuoteBox from "./Components/QuoteBox";
 //import Stack from "./Components/Stack/Stack";
 
 import "./styles.css";
